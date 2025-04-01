@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fadal Tool Touch-Off Guide</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
+        h2 { color: #333; }
+        .step { margin-bottom: 20px; }
+        .step-title { font-weight: bold; font-size: 18px; margin-bottom: 5px; }
+        ul { padding-left: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Fadal CNC - Tool Touch-Off Procedure</h1>
+
+    <div class="step">
+        <div class="step-title">Step 1: Prepare the Machine</div>
+        <ul>
+            <li>Ensure the tool magazine is loaded with the correct tools.</li>
+            <li>Place a precision tool setter or a gauge block on the machine table.</li>
+        </ul>
+    </div>
+
+    <div class="step">
+        <div class="step-title">Step 2: Go to Tool Setting Cycle</div>
+        <ul>
+            <li>Press MANUAL until the command prompt page appears.</li>
+            <li>Type UT and press ENTER to get to the utilities page.</li>
+            <li>Select option number 1 - Tool Setting Cycle, then press ENTER.</li>
+            <li>Select the starting and ending tool number. If only setting one tool, start and end with that tool number.</li>
+            <li>Select Jog to Position. <b>DO NOT press ENTER.</b></li>
+            <li>The prompt will ask for gauge block size. Enter the size in inches and press ENTER.</li>
+        </ul>
+    </div>
+
+    <div class="step">
+        <div class="step-title">Step 3: Move the Tool to the Touch-Off Position</div>
+        <ul>
+            <li>Select option number 1 - Enter Tool Diameter, then press ENTER.</li>
+            <li>Input the tool diameter and press ENTER.</li>
+            <li>Select option number 2 - Jog to Position, then press ENTER.</li>
+            <li>Press JOG to enable jogging mode.</li>
+            <li>Use the axis and increment knobs along with the handwheel to move the tool slowly towards the tool setter or gauge block.</li>
+            <li>If using a tool setter gauge, lower the tool until it reads zero.</li>
+            <li>If using a feeler gauge, move the tool down until light contact is made.</li>
+            <li>Press MANUAL to abort.</li>
+            <li>Press CYCLE START to return the head to Z zero.</li>
+            <li>The tool changer will automatically call the next tool if touching off consecutive tools. Repeat Step 3 until all tools are measured.</li>
+        </ul>
+    </div>
+
+    <div class="step">
+        <div class="step-title">Step 4: Move to Machine Home</div>
+        <ul>
+            <li>Press MANUAL until the command prompt page appears.</li>
+            <li>Input HO and press ENTER.</li>
+        </ul>
+    </div>
+
+    <div class="step">
+        <div class="step-title">Step 5: Verify Tool Offsets</div>
+        <ul>
+            <li>Input DT from the command prompt page and press ENTER.</li>
+            <li>Verify tool offsets have been input.</li>
+        </ul>
+    </div>
+
+</body>
+</html>
